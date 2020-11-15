@@ -438,10 +438,10 @@ FEATURES = {
   "use_tcu_gears": {CAR.K5, CAR.SONATA19, CAR.VELOSTER, CAR.SONATA_LF_TURBO},
   # Use E_GEAR Message for Gear Selection
   "use_elect_gears": {CAR.K5_HEV, CAR.IONIQ_EV_LTD, CAR.KONA_EV, CAR.SONATA_HEV, CAR.NIRO_EV, CAR.K7_HEV,
-                      CAR.GRANDEUR_HEV},
+                      CAR.GRANDEUR_HEV,CAR.NEXO},
   # Use E_EMS11 Message for Gas and Brake for Hybrid/ELectric
   "use_elect_ems": {CAR.K5_HEV, CAR.IONIQ_EV_LTD, CAR.KONA_EV, CAR.SONATA_HEV, CAR.NIRO_EV, CAR.K7_HEV,
-                    CAR.GRANDEUR_HEV},
+                    CAR.GRANDEUR_HEV,CAR.NEXO},
   # send LFA MFA message for new HKG models
   "send_lfa_mfa": {CAR.SONATA, CAR.PALISADE, CAR.SONATA_HEV, CAR.SANTA_FE, CAR.NIRO_EV},
   "has_scc13": {},
@@ -451,7 +451,7 @@ FEATURES = {
               CAR.PALISADE, CAR.GENESIS_G70},
 
   "use_bsm": {CAR.SONATA, CAR.PALISADE, CAR.GENESIS, CAR.GENESIS_G70, CAR.GENESIS_G80, CAR.GENESIS_G90,
-              CAR.GENESIS_G90_L, CAR.KONA,CAR.NEXO},
+              CAR.GENESIS_G90_L, CAR.KONA},
 
   "use_blinker_flash": {CAR.SONATA_LF_TURBO},
 
