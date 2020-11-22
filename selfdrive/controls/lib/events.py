@@ -503,9 +503,9 @@ EVENTS: Dict[int, Dict[str, Union[Alert, Callable[[Any, messaging.SubMaster, boo
     ET.USER_DISABLE: EngagementAlert(AudibleAlert.chimeDisengage),
   },
 
-  #EventName.buttonCancel: {  캔슬 버튼  디스인게이지 
-  #  ET.USER_DISABLE: EngagementAlert(AudibleAlert.chimeDisengage),
-  #},
+  EventName.buttonCancel: { #  캔슬 버튼  디스인게이지 
+    ET.USER_DISABLE: EngagementAlert(AudibleAlert.chimeDisengage),
+  },
 
   EventName.brakeHold: {
     ET.USER_DISABLE: EngagementAlert(AudibleAlert.chimeDisengage),
