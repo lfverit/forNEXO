@@ -131,13 +131,13 @@ class CarState(CarStateBase):
     elif self.CP.carFingerprint in FEATURES["use_elect_gears"]:
       gear = cp.vl["ELECT_GEAR"]["Elect_Gear_Shifter"]
      # print(gear)
-      if gear in (5, 8):  # 5: D, 8: sport mode
+      if gear in (6,9):  # 5: D, 8: sport mode
         ret.gearShifter = GearShifter.drive
-      elif gear == 6:
+      elif gear == 10: # 6
         ret.gearShifter = GearShifter.neutral
-      elif gear == 0:
+      elif gear == 9: #0
         ret.gearShifter = GearShifter.park
-      elif gear == 7:
+      elif gear == 6: #7
         ret.gearShifter = GearShifter.reverse
       else:
         ret.gearShifter = GearShifter.unknown
