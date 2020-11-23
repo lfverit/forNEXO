@@ -97,10 +97,10 @@ class CarState(CarStateBase):
       ret.gas = cp.vl["EMS12"]['PV_AV_CAN'] / 100
       ret.gasPressed = bool(cp.vl["EMS16"]["CF_Ems_AclAct"])
 
-    print(cp.vl["CLU15"])
-    print(cp.vl["TCU12"])
-    print(cp.vl["ELECT_GEAR"])
-    print(cp.vl["LVR12"])
+   # print(cp.vl["CLU15"])
+   # print(cp.vl["TCU12"])
+   # print(cp.vl["ELECT_GEAR"])
+   # print(cp.vl["LVR12"])
 
     # TODO: refactor gear parsing in function
     # Gear Selection via Cluster - For those Kia/Hyundai which are not fully discovered, we can use the Cluster Indicator for Gear Selection,
@@ -130,10 +130,11 @@ class CarState(CarStateBase):
     # Gear Selecton - This is only compatible with optima hybrid 2017
     elif self.CP.carFingerprint in FEATURES["use_elect_gears"]:
       gear = cp.vl["ELECT_GEAR"]["Elect_Gear_Shifter"]
-     # print(gear)
-      if gear in (6,9):  # 5: D, 8: sport mode
+    
+      if gear in (6,10):  # 5: D, 8: sport mode
+        print(gear)
         ret.gearShifter = GearShifter.drive
-      elif gear == 10: # 6
+      elif gear == 0: # 6
         ret.gearShifter = GearShifter.neutral
       elif gear == 9: #0
         ret.gearShifter = GearShifter.park
