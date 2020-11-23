@@ -435,11 +435,11 @@ FEATURES = {
   # Use Cluster for Gear Selection, rather than Transmission
   "use_cluster_gears": {CAR.ELANTRA, CAR.KONA, CAR.ELANTRA_GT_I30, CAR.K7, CAR.NIRO_HEV, CAR.GRANDEUR},
   # Use TCU Message for Gear Selection
-  "use_tcu_gears": {CAR.NEXO}, # ,CAR.K5, CAR.SONATA19, CAR.VELOSTER, CAR.SONATA_LF_TURBO
+  "use_tcu_gears": {CAR.K5, CAR.SONATA19, CAR.VELOSTER, CAR.SONATA_LF_TURBO}, # ,CAR.K5, CAR.SONATA19, CAR.VELOSTER, CAR.SONATA_LF_TURBO
   # Use E_GEAR Message for Gear Selection
-  "use_elect_gears": {},
+  "use_elect_gears": {CAR.NEXO},
   # Use E_EMS11 Message for Gas and Brake for Hybrid/ELectric
-  "use_elect_ems": {},
+  "use_elect_ems": {CAR.NEXO},
   # send LFA MFA message for new HKG models
   "send_lfa_mfa": {CAR.SONATA, CAR.PALISADE, CAR.SONATA_HEV, CAR.SANTA_FE, CAR.NIRO_EV},
   "has_scc13": {},
