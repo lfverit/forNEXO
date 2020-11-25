@@ -46,7 +46,7 @@ class LatControlLQR():
     return self.sat_count > self.sat_limit
 
   def update(self, active, CS, CP, path_plan):
-    self.tune.check() # neokii fix
+    self.tune.check() # neokii fix 
     
     lqr_log = log.ControlsState.LateralLQRState.new_message()
       
