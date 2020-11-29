@@ -139,11 +139,11 @@ class CarState(CarStateBase):
        # print(gear_temp)
       if gear == 5:  # 5: D, 8: sport mode
         ret.gearShifter = GearShifter.drive
-      elif gear == 6: # 6
+      elif gear == 7: # 6
         ret.gearShifter = GearShifter.neutral
       elif gear == 0: #0
         ret.gearShifter = GearShifter.park
-      elif gear == 7: #7
+      elif gear == 6: #7
         ret.gearShifter = GearShifter.reverse
       else:
         ret.gearShifter = GearShifter.unknown
