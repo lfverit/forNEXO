@@ -134,9 +134,9 @@ class CarState(CarStateBase):
       if gear != 10:
         gear_temp = gear
         print(gear_temp)
-      else:
-        gear_temp = 0
-        print(gear_temp)
+      #else:
+       # gear_temp = 0
+       # print(gear_temp)
       if gear_temp == 0:  # 5: D, 8: sport mode
         ret.gearShifter = GearShifter.drive
       elif gear_temp == 0: # 6
