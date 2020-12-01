@@ -717,6 +717,17 @@ EVENTS: Dict[int, Dict[str, Union[Alert, Callable[[Any, messaging.SubMaster, boo
       Priority.LOWEST, VisualAlert.none, AudibleAlert.none, 0., 0., .2, creation_delay=0.5),
     ET.SOFT_DISABLE: SoftDisableAlert("기어 [R] 상태"),
     ET.NO_ENTRY: NoEntryAlert("기어 [R] 상태"),
+    #ET.USER_DISABLE: EngagementAlert(AudibleAlert.chimeDisengage),
+  },
+   EventName.parkGear: {
+    ET.PERMANENT: Alert(
+      "기어 [R] 상태",
+      "",
+      AlertStatus.normal, AlertSize.full,
+      Priority.LOWEST, VisualAlert.none, AudibleAlert.none, 0., 0., .2, creation_delay=0.5),
+    ET.SOFT_DISABLE: SoftDisableAlert("기어 [R] 상태"),
+    ET.NO_ENTRY: NoEntryAlert("기어 [R] 상태"),
+    #ET.USER_DISABLE: EngagementAlert(AudibleAlert.chimeDisengage),
   },
 
   EventName.cruiseDisabled: {
