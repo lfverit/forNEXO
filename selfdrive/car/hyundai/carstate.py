@@ -137,14 +137,14 @@ class CarState(CarStateBase):
       else:
        # gear_temp = 0
         print(gear_temp)
-      if gear_temp == 9:  # 5: D, 8: sport mode
-        ret.gearShifter = GearShifter.park
-      elif gear_temp == 6: # 6
-        ret.gearShifter = GearShifter.reverse
-      elif gear == 10: #0
+      if gear == 10:  # 5: D, 8: sport mode
         ret.gearShifter = GearShifter.drive
-      elif gear != 10: #7
+      elif gear == 10: # 6
         ret.gearShifter = GearShifter.neutral
+      elif gear_temp == 9: #0
+        ret.gearShifter = GearShifter.park
+      elif gear_temp == 6: #7
+        ret.gearShifter = GearShifter.reverse
       else:
         ret.gearShifter = GearShifter.unknown
     # Gear Selecton - This is not compatible with all Kia/Hyundai's, But is the best way for those it is compatible with
