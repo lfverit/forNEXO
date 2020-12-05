@@ -134,7 +134,7 @@ class CarState(CarStateBase):
       print(gear_disp)
       print(gear)
       
-      gear_shifter = GearShifter.unknown
+     # gear_shifter = GearShifter.unknown
 
       if gear == 2566:  # 5: D, 8: sport mode 넥소대응
         gear_shifter = GearShifter.drive
@@ -147,10 +147,10 @@ class CarState(CarStateBase):
       elif gear == 2570:
         gear_shifter = GearShifter.unknown
 
-      if self.gear_shifter != gear_shifter:
-        self.gear_shifter = gear_shifter
+      #if self.gear_shifter != gear_shifter:
+       # self.gear_shifter = gear_shifter
 
-      ret.gearShifter = self.gear_shifter
+#      ret.gearShifter = self.gear_shifter
       
     # Gear Selecton - This is not compatible with all Kia/Hyundai's, But is the best way for those it is compatible with
     else:
