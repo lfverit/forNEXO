@@ -138,9 +138,9 @@ class CarState(CarStateBase):
         ret.gearShifter = GearShifter.drive
       elif gear_temp == 9: # 6
         ret.gearShifter = GearShifter.neutral
-      elif gear_temp == 10: #0
+      elif gear == 10: #0
         ret.gearShifter = GearShifter.park
-      elif gear_temp == 10: #7
+      elif gear == 10: #7
         ret.gearShifter = GearShifter.reverse
       else:
         ret.gearShifter = GearShifter.unknown
