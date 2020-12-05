@@ -149,7 +149,7 @@ class CarState(CarStateBase):
       if self.gear_shifter != gear_shifter:
         self.gear_shifter = gear_shifter
 
-      ret.gearShifter = self.gear_shifter
+        ret.gearShifter = self.gear_shifter
       
     # Gear Selecton - This is not compatible with all Kia/Hyundai's, But is the best way for those it is compatible with
     else:
